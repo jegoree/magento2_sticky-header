@@ -1,0 +1,47 @@
+.page-header {
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+
+    @include after-mobile() {
+        transform: translateY(0);
+        transition: $animate;
+
+        &-up {
+            transform: translateY(-73%);
+        }
+
+        .logo {
+            transform: scale(1) translateY(0);
+            transition: $animate;
+
+            &-down {
+                transform: scale(0.7) translateY(6px);
+            }
+        }
+
+        .sections {
+            margin-bottom: 0;
+            text-align: center;
+
+            li {
+                text-align: left;
+            }
+        }
+
+        .content {
+            transform: translateY(0);
+            transition: $animate;
+            z-index: 99;
+
+            &-down {
+                transform: translateY(68px);
+            }
+        }
+    }
+}
+
+.breadcrumbs {
+    margin-top: 25px;
+}

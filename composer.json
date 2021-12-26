@@ -1,0 +1,15 @@
+{
+  "name": "sticky-header-theme",
+  "description": "N/A",
+  "type": "magento2-theme",
+  "version": "1.0.0",
+  "require": {
+    "magento/theme-frontend-luma": "*",
+    "magento/framework": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}
